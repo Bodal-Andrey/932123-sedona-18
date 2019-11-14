@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link  href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
       <nav class="main-nav">
         <ul class="main-nav__list site-list">
           <li class="site-list__item site-list__item--active" >
-            <a class="site-list__link" href="#">Главная</a>
+            <a class="site-list__link" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link" href="photo.html">Фото и видео</a>
@@ -24,15 +26,15 @@
         <button class="main-nav__button" type="button">Открыть меню</button>
       </nav>
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" alt="Логотип" width="102" height="83">
+        <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="Логотип" width="102" height="83">
       </a>
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Сайт туристического городка Седона</h1>
       <div class="page-main__image">
-        <img src="https://via.placeholder.com/150x150" alt="Welcome to Sedona"  width="320" height="389">
+        <img src="img/text-sedona-index.svg" alt="Welcome to Sedona" width="281" height="214">
       </div>
-      <section class="advantages">
+      <section class="page-main__advantages advantages">
         <h2 class="advantages__title">Седона, небольшой городок в Аризоне, заслуживающий большего!</h2>
         <p class="advantages__text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         <ul class="advantages__list">
@@ -40,7 +42,7 @@
             <h3 class="excellences__title">Настоящий городок</h3>
             <p class="excellences__text">- №1 -</p>
             <p class="excellences__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
-            <img class="excellences__image" src="https://via.placeholder.com/150x150" alt="Фото здания"  width="320" height="260">
+            <img class="excellences__image" src="img/main-city-mobile@1x.jpg" alt="Фото здания"  width="320" height="260">
             <ul class="excellences__list benefit">
               <li class="benefit__item benefit__item--fast">
                 <h4 class="benefit__title">Жилье</h4>
@@ -60,7 +62,7 @@
             <h3 class="excellences__title">Там есть мост дьявола</h3>
             <p class="excellences__text">- №2 -</p>
             <p class="excellences__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-            <img class="excellences__image" src="https://via.placeholder.com/150x150" alt="Фото горы"  width="320" height="260">
+            <img class="excellences__image" src="img/photo-bridge-mobile@1x.jpg" alt="Фото горы"  width="320" height="260">
           </li>
           <li class="advantages__item excellences">
             <h3 class="excellences__title">Небольшая площадь</h3>
@@ -79,20 +81,20 @@
           </li>
         </ul>
       </section>
-      <section class="select-hotel">
+      <section class="page-main__hotels select-hotel">
         <h2 class="select-hotel__title">Заитересовались?</h2>
         <p class="select-hotel__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="select-hotel__link" href="#">Найти гостиницу</a>
       </section>
-      <div class="min-map">
+      <div class="page-main__map min-map">
         <a class="min-map__link" href="#">
           <img class="min-map__image" src="https://via.placeholder.com/150x150" alt="Карта Седоны"  width="320" height="350">
         </a>
       </div>
     </main>
     <footer class="page-footer">
-      <p class="page-footer__hashtag hashtag">
-        <a class="hashtag__link" href="#">#VISITSEDONA</a>
+      <p class="page-footer__hashtag">
+        <a href="#">#VISITSEDONA</a>
       </p>
       <div class="page-footer__social social">
         <ul class="social__list">
@@ -107,9 +109,9 @@
           </li>
         </ul>
       </div>
-      <div class="page-footer__copyright copyright">
-        <b class="copyright__text">Разработано</b>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <div class="page-footer__copyright">
+        <b>Разработано</b>
+        <a class="button" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </div>
     </footer>
   </body>
