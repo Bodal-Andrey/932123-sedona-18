@@ -1,23 +1,22 @@
-
-.photos__title {
+.video__title {
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+  text-transform: uppercase;
   text-align: center;
 }
 
-.photos__text {
+.video__text {
   font-size: 14px;
   line-height: 24px;
+  text-transform: uppercase;
   text-align: center;
   color: #333333;
 }
 
-.photos__list {
-  width: 280px;
-  padding: 0;
-  margin: 0;
+.video__image {
+  display: block;
+  width: 320px;
   margin-left: auto;
   margin-right: auto;
-  list-style: none;
 }
