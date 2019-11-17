@@ -16,7 +16,7 @@
     color: #333333;
 }
 
-.form-review__input { 
+.form-review__input {
     padding-top: 20px;
     padding-left: 20px;
     padding-bottom: 20px;
@@ -24,10 +24,10 @@
     border: none;
 
     &::placeholder {
-       font-size: 18px;
-       line-height: 26px;
-       font-weight: bold;
-       color: #000000;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: bold;
+        color: #000000;
     }
 }
 
