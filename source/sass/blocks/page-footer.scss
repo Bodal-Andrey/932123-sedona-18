@@ -17,3 +17,10 @@
   font-weight: normal;
   text-transform: uppercase;
 }
+
+@media (min-width: $tablet-width) {
+  .page-footer {
+    display: flex;
+    justify-content: space-around;
+  }
+}

@@ -25,6 +25,12 @@ input[type="radio"].visually-hidden {
 }
 
 body {
+  min-width: 320px;
   font-family: $ptsans;
   color: #000000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

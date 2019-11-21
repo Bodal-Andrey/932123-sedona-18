@@ -1,38 +1,33 @@
-.benefit__title {
+.superiorities {
+  background-color: #eeeeee;
+}
+
+.superiorities__title {
   margin: 0;
   padding: 0;
-  padding-top: 40px;
+  padding-top: 60px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
+  text-align: center;
+  color: #000000;
 }
 
-.benefit__text {
+.superiorities__text {
   margin: 0;
   padding: 0;
-  padding-top: 30px;
   font-size: 14px;
   line-height: 21px;
+  text-align: center;
   color: #333333;
 }
 
-.benefit__item {
-  padding-left: 70px;
-  padding-right: 70px;
-}
-
 @media (min-width: $tablet-width) {
-  .benefit {
+  .superiorities {
     display: flex;
   }
 
-  .benefit__title {
+  .superiorities__title {
     font-size: 21px;
-  }
-
-  .benefit__item {
-    &:nth-child(2) {
-      order: 1;
-    }
   }
 }

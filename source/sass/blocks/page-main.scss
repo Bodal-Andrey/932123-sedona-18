@@ -10,3 +10,21 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media (min-width: $tablet-width) {
+  .page-main__image {
+    // min-height: 518px;
+    padding-top: 78px;
+  }
+
+  .page-main__image img {
+    width: 460px;
+    height: 350px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__image {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+}
