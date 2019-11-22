@@ -28,9 +28,15 @@ body {
   min-width: 320px;
   font-family: $ptsans;
   color: #000000;
+  text-transform: uppercase;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0;
 }

@@ -1,5 +1,5 @@
 .superiorities {
-  background-color: #eeeeee;
+  background-color: #eaeaea;
 }
 
 .superiorities__title {
@@ -29,5 +29,11 @@
 
   .superiorities__title {
     font-size: 21px;
+  }
+
+  .superiorities-item {
+    width: 285px;
+    min-height: 136px;
+    margin: 0 auto;
   }
 }
