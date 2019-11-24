@@ -1,4 +1,3 @@
-
 .excellences__title {
   margin: 0;
   padding: 0;
@@ -21,7 +20,7 @@
 
 .excellences-box {
   order: 2;
-  min-width: 260px;
+  min-height: 210px;
   background-color: #81b3d2;
 
   .excellences__title,
@@ -36,22 +35,9 @@
   list-style: none;
 }
 
-.excellences {
-  &:nth-child(1) .excellences__image {
-    width: 100%;
-    min-height: 260px;
-    background-image: url("../img/main-city-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
-
-  &:nth-child(3) .excellences__image {
-    width: 100%;
-    min-height: 260px;
-    background-image: url("../img/main-bridge-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
+.excellences__image {
+  width: 100%;
+  height: 260px;
 }
 
 @media (min-width: $tablet-width) {
@@ -66,11 +52,15 @@
 
     &:nth-child(1) .excellences__image {
       order: 2;
-      background-image: url("../img/main-city-tablet@1x.jpg");
     }
+  }
 
-    &:nth-child(3) .excellences__image {
-      background-image: url("../img/main-bridge-tablet@1x.jpg");
-    }
+  .excellences__image {
+    height: 256px;
+  }
+
+  .excellences-box {
+    width: 256px;
+    min-height: 256px;
   }
 }

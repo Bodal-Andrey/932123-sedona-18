@@ -24,6 +24,7 @@
 @media (min-width: $tablet-width) {
   .benefit {
     display: flex;
+    justify-content: space-around;
   }
 
   .benefit__title {
@@ -31,6 +32,9 @@
   }
 
   .benefit__item {
+    padding: 0;
+    text-align: center;
+
     &:nth-child(2) {
       order: 1;
     }

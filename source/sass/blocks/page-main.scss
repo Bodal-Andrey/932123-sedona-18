@@ -1,5 +1,6 @@
-.page-main {
-  width: 100%;
+.page-main__wrapper {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .page-main__image {
@@ -12,6 +13,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-main__wrapper {
+    width: 768px;
+  }
+
   .page-main__image {
     min-height: 520px;
     padding-top: 78px;
@@ -25,6 +30,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-main__wrapper {
+    width: 1200px;
+  }
+
   .page-main__image {
     min-height: 520px;
     padding-top: 78px;
