@@ -1,0 +1,39 @@
+.superiorities {
+  background-color: #eaeaea;
+}
+
+.superiorities__title {
+  margin: 0;
+  padding: 0;
+  padding-top: 60px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+}
+
+.superiorities__text {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #333333;
+}
+
+@media (min-width: $tablet-width) {
+  .superiorities {
+    display: flex;
+  }
+
+  .superiorities__title {
+    font-size: 21px;
+  }
+
+  .superiorities-item {
+    width: 285px;
+    min-height: 136px;
+    margin: 0 auto;
+  }
+}

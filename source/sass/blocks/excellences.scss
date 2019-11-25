@@ -1,4 +1,3 @@
-
 .excellences__title {
   margin: 0;
   padding: 0;
@@ -19,39 +18,14 @@
   color: #333333;
 }
 
-.excellences {
-  &:first-child {
-    background-color: #81b3d2;
+.excellences-box {
+  order: 2;
+  min-height: 210px;
+  background-color: #81b3d2;
 
-    .excellences__title,
-    .excellences__text {
-      color: #ffffff;
-    }
-
-    .excellences__image {
-      width: 100%;
-      min-height: 260px;
-    }
-  }
-
-  &:nth-child(2) {
-    background-color: #81b3d2;
-
-    .excellences__title,
-    .excellences__text {
-      color: #ffffff;
-    }
-
-    .excellences__image {
-      width: 100%;
-      min-height: 260px;
-    }
-  }
-
-  &:nth-child(3),
-  &:nth-child(4),
-  &:nth-child(5) {
-    background-color: #eeeeee;
+  .excellences__title,
+  .excellences__text {
+    color: #ffffff;
   }
 }
 
@@ -59,5 +33,40 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  background-color: #ffffff;
+}
+
+.excellences__image {
+  width: 100%;
+  height: 260px;
+}
+
+@media (min-width: $tablet-width) {
+  .excellences {
+    &:nth-child(1) {
+      display: flex;
+    }
+
+    &:nth-child(3) {
+      display: flex;
+    }
+
+    &:nth-child(1) .excellences__image {
+      order: 2;
+    }
+  }
+
+  .excellences__image {
+    height: 256px;
+  }
+
+  .excellences-box {
+    width: 256px;
+    min-height: 256px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .excellences-box {
+    width: 400px;
+  }
 }

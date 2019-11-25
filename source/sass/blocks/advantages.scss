@@ -21,3 +21,10 @@
   padding: 0;
   list-style: none;
 }
+
+@media (min-width: $tablet-width) {
+  .advantages__title {
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
