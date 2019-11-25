@@ -1,6 +1,4 @@
 .page-footer__wrapper {
-  width: 320px;
-  margin: 0 auto;
   text-align: center;
 }
 
@@ -21,12 +19,5 @@
   .page-footer__wrapper {
     display: flex;
     justify-content: space-around;
-    width: 768px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .page-footer__wrapper {
-    width: 1200px;
   }
 }
