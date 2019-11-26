@@ -15,11 +15,17 @@
 .video__image {
   display: block;
   width: 320px;
+  height: 200px;
   margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
   .video__title {
     font-size: 30px;
+  }
+
+  .video__image {
+    width: 650px;
+    height: 500px;
   }
 }

@@ -1,4 +1,6 @@
 .form-review__fieldset {
+  margin: 0;
+  padding: 0;
   border: none;
 }
 
@@ -10,30 +12,18 @@
 }
 
 .form-review__label {
+  display: block;
+  width: 280px;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 26px;
   color: #333333;
 }
 
-.form-review__input {
-  padding-top: 20px;
-  padding-left: 20px;
-  padding-bottom: 20px;
-  background-color: #f2f2f2;
-  border: none;
-
-  &::placeholder {
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: bold;
-    color: #000000;
-  }
-}
-
 .form-review__textarea {
   display: block;
-  padding: 0;
-  margin: 0 auto;
+  width: 280px;
+  margin-top: 20px;
   background-color: #f2f2f2;
   border: none;
 
@@ -63,4 +53,28 @@
   color: #ffffff;
   background-color: #81b2d3;
   border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .form-review {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .form-review__fieldset:last-child {
+    order: 1;
+    margin: 0 auto;
+  }
+
+  .form-review__label {
+    width: 648px;
+  }
+
+  .form-review__textarea {
+    width: 648px;
+  }
+
+  .form-review__button {
+    margin-left: 0;
+  }
 }

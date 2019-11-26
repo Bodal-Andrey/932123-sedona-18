@@ -1,4 +1,9 @@
+.review-checkbox {
+  display: flex;
+}
+
 .review-checkbox__legend {
+  margin-bottom: 20px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -6,8 +11,16 @@
 }
 
 .review-checkbox__label {
+  margin-bottom: 50px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   text-transform: none;
+}
+
+@media (min-width: $tablet-width) {
+  .review-checkbox {
+    order: 1;
+    width: 648px;
+  }
 }
