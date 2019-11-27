@@ -11,3 +11,28 @@
   text-align: center;
   color: #333333;
 }
+
+.review-form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+@media (min-width: $tablet-width) {
+  .review__form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .review__title {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review__text {
+    width: 440px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+  }
+}
