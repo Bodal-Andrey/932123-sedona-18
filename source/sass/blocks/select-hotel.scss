@@ -27,3 +27,13 @@
   color: #ffffff;
   background-color: #81b2d3;
 }
+
+@media (min-width: $tablet-width) {
+  .select-hotel__title {
+    font-size: 30px;
+  }
+
+  .select-hotel__link {
+    width: 458px;
+  }
+}
