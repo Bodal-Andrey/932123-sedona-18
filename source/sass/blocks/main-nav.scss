@@ -1,7 +1,46 @@
+.main-nav {
+  position: relative;
+}
+
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.main-nav__button {
+  position: absolute;
+  bottom: -40px;
+  right: 19px;
+  padding: 0;
+  width: 23px;
+  height: 23px;
+  background-image: url("../img/icon-menu.svg");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav--opened .main-nav__button::before {
+  content: "";
+  position: absolute;
+  top: -223px;
+  right: 1px;
+  width: 23px;
+  height: 22px;
+  background-image: url("../img/icon-cross.svg");
+  background-repeat: no-repeat;
+}
+
+.main-nav--nojs .main-nav {
+  position: static;
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .site-list__item {
+    display: none;
+  }
 }
 
 @media (min-width: $tablet-width) {
