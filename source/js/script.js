@@ -10,5 +10,5 @@ navButton.addEventListener("click", function() {
     } else {
         navMain.classList.add("main-nav--closed");
         navMain.classList.remove("mai-nav--opened");
-   }
+    }
 });
