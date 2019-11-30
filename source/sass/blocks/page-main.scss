@@ -1,11 +1,35 @@
 .page-main__image {
-  width: 320px;
+  position: relative;
+  width: 318px;
   height: 390px;
-  padding-top: 90px;
+  margin-top: 57px;
   text-align: center;
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.page-main__image img {
+  padding-top: 88px;
+}
+
+.page-main__image::after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  right: -1px;
+  width: 320px;
+  height: 26px;
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+}
+
+.page-main__image--inner {
+  height: 157px;
+}
+
+.page-main__image--inner img {
+  padding-top: 50px;
 }
 
 @media (min-width: $tablet-width) {
