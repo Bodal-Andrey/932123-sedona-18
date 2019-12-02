@@ -1,7 +1,7 @@
 .excellences__title {
   margin: 0;
   padding: 0;
-  padding-top: 60px;
+  padding-top: 77px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -12,20 +12,51 @@
 .excellences__text {
   margin: 0;
   padding: 0;
+  padding-top: 9px;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
   color: #333333;
+
+  &:nth-child(3) {
+    padding-top: 15px;
+    padding-left: 17px;
+    padding-right: 19px;
+  }
 }
 
 .excellences-box {
   order: 2;
-  min-height: 210px;
   background-color: #81b3d2;
 
   .excellences__title,
   .excellences__text {
     color: #ffffff;
+  }
+}
+
+.excellences-box--city {
+  position: relative;
+  margin-top: 5px;
+  min-height: 230px;
+}
+
+.excellences-box--city::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 37px;
+  background-image: url(../img/bg-triangle.svg);
+}
+
+.excellences-box--bridge {
+  margin-top: 37px;
+  min-height: 191px;
+
+  .excellences__title {
+    padding-top: 38px;
   }
 }
 

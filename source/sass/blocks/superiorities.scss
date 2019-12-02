@@ -2,10 +2,15 @@
   background-color: #eaeaea;
 }
 
+.superiorities-item {
+  padding-top: 24px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 .superiorities__title {
   margin: 0;
   padding: 0;
-  padding-top: 60px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -16,6 +21,7 @@
 .superiorities__text {
   margin: 0;
   padding: 0;
+  padding-top: 5px;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
