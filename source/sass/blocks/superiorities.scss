@@ -2,12 +2,6 @@
   background-color: #eaeaea;
 }
 
-.superiorities-item {
-  padding-top: 24px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
 .superiorities__title {
   margin: 0;
   padding: 0;
@@ -21,11 +15,42 @@
 .superiorities__text {
   margin: 0;
   padding: 0;
-  padding-top: 5px;
   font-size: 14px;
   line-height: 21px;
   text-align: center;
   color: #333333;
+}
+
+.superiorities-item--place {
+  padding-top: 24px;
+  padding-left: 40px;
+  padding-right: 42px;
+}
+
+.superiorities-item--road {
+  padding-top: 55px;
+  padding-left: 40px;
+  padding-right: 42px;
+}
+
+.superiorities-item--tourist {
+  padding-top: 55px;
+  padding-left: 31px;
+  padding-right: 31px;
+
+  p:nth-child(3) {
+    padding-bottom: 27px;
+  }
+}
+
+.superiorities-item {
+  p:nth-child(2) {
+    padding-top: 9px;
+  }
+
+  p:nth-child(3) {
+    padding-top: 15px;
+  }
 }
 
 @media (min-width: $tablet-width) {
