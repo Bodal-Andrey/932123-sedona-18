@@ -133,6 +133,17 @@
 
 @media (min-width: $desktop-width) {
   .excellences-box {
-    width: 400px;
+    width: 563px;
+  }
+
+  .excellences-box--city {
+    padding-top: 6px;
+    padding-left: 36px;
+    padding-right: 42px;
+  }
+
+  .excellences__title {
+    margin-right: 54px;
+    margin-left: 58px;
   }
 }

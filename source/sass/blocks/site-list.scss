@@ -68,3 +68,13 @@
     padding-left: 4px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .site-list__item {
+    width: 239px;
+
+    &:nth-child(2) {
+      margin-right: 220px;
+    }
+  }
+}

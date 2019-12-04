@@ -9,7 +9,7 @@
 .benefit__text {
   margin: 0;
   padding: 0;
-  padding-top: 14px;
+  margin-top: 14px;
   font-size: 14px;
   line-height: 21px;
   color: #333333;
@@ -76,7 +76,7 @@
   }
 
   .benefit__text {
-    padding-top: 22px;
+    margin-top: 22px;
   }
 
   .benefit__item {
@@ -130,5 +130,27 @@
     width: 64px;
     height: 75px;
     background-image: url("../img/icon-gift-tablet.svg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .benefit__item {
+    width: 400px;
+  }
+
+  .benefit__item--house::before {
+    left: 161px;
+  }
+
+  .benefit__item--meal::before {
+    left: 161px;
+  }
+
+  .benefit__item--gift::before {
+    left: 167px;
+  }
+
+  .benefit__text {
+    margin-top: 20px;
   }
 }

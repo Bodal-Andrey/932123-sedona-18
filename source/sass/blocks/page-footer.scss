@@ -36,6 +36,14 @@
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     display: flex;
-    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 11px;
+    padding-left: 60px;
+  }
+
+  .page-footer__copyright {
+    margin: 0;
+    padding: 0;
+    margin-left: 115px;
   }
 }

@@ -42,7 +42,7 @@
   }
 
   .page-main__image::after {
-    bottom: 0;
+    bottom: -1px;
     right: 0;
     width: 768px;
     height: 57px;
@@ -61,5 +61,13 @@
     width: 1200px;
     padding-top: 78px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
+  }
+
+  .page-main__image::after {
+    bottom: -1px;
+    right: 0;
+    width: 1200px;
+    height: 57px;
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
   }
 }
