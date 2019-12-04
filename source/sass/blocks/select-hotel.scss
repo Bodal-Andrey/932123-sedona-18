@@ -13,6 +13,8 @@
 .select-hotel__text {
   margin: 0;
   padding-top: 19px;
+  padding-left: 15px;
+  padding-right: 16px;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
@@ -36,11 +38,22 @@
 }
 
 @media (min-width: $tablet-width) {
+  .select-hotel {
+    margin-top: 56px;
+  }
+
   .select-hotel__title {
     font-size: 30px;
   }
 
   .select-hotel__link {
     width: 458px;
+  }
+
+  .select-hotel__text {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
   }
 }

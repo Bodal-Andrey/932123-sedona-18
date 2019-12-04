@@ -31,7 +31,18 @@
 }
 
 @media (min-width: $tablet-width) {
+  .advantages__item {
+    min-height: 256px;
+
+    &:nth-child(1) {
+      margin-top: 52px;
+    }
+  }
+
   .advantages__title {
+    margin-top: 49px;
+    padding-left: 87px;
+    padding-right: 95px;
     font-size: 21px;
     line-height: 26px;
   }

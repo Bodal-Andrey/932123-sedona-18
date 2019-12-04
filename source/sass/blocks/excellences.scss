@@ -91,8 +91,43 @@
   }
 
   .excellences-box {
-    width: 256px;
+    margin-top: 0;
     min-height: 256px;
+  }
+
+  .excellences-box--city::before {
+    display: none;
+  }
+
+  .excellences__title {
+    padding-top: 45px;
+    font-size: 21px;
+  }
+
+  .excellences__text {
+    &:nth-child(3) {
+      padding-top: 23px;
+      padding-left: 23px;
+      padding-bottom: 23px;
+    }
+  }
+
+  .excellences-box--city {
+    width: 361px;
+    padding-left: 23px;
+    padding-right: 23px;
+  }
+
+  .excellences-box--bridge {
+    width: 360px;
+    padding-left: 23px;
+    padding-right: 28px;
+
+    .excellences__title {
+      padding-top: 45px;
+      padding-left: 31px;
+      padding-right: 25px;
+    }
   }
 }
 
