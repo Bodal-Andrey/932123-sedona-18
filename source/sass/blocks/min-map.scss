@@ -24,6 +24,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .min-map {
+    margin-top: 66px;
+  }
+
   .min-map__image {
     width: 1200px;
   }

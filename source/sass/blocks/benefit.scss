@@ -15,18 +15,22 @@
   color: #333333;
 }
 
+.benefit__text br {
+  display: none;
+}
+
 .benefit__item {
   padding-left: 70px;
   padding-right: 30px;
 }
 
 .benefit__item--house .benefit__title {
-  padding-top: 32px;
+  margin-top: 32px;
 }
 
 .benefit__item--gift .benefit__title,
 .benefit__item--meal .benefit__title {
-  padding-top: 28px;
+  margin-top: 28px;
 }
 
 .benefit__item--house,
@@ -38,7 +42,7 @@
 .benefit__item--house::before {
   position: absolute;
   content: "";
-  top: 23px;
+  top: -9px;
   left: 23px;
   width: 36px;
   height: 37px;
@@ -48,7 +52,7 @@
 .benefit__item--gift::before {
   position: absolute;
   content: "";
-  top: 17px;
+  top: -11px;
   left: 25px;
   width: 32px;
   height: 38px;
@@ -58,7 +62,7 @@
 .benefit__item--meal::before {
   position: absolute;
   content: "";
-  top: 23px;
+  top: -5px;
   left: 18px;
   width: 40px;
   height: 35px;
@@ -152,5 +156,9 @@
 
   .benefit__text {
     margin-top: 20px;
+  }
+
+  .benefit__text br {
+    display: block;
   }
 }

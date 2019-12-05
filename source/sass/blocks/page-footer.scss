@@ -47,3 +47,13 @@
     margin-left: 115px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .page-footer__hashtag {
+    margin-left: 59px;
+  }
+
+  .page-footer__copyright {
+    margin-left: 271px;
+  }
+}

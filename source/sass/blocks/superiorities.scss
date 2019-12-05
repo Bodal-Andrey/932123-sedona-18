@@ -74,11 +74,13 @@
     margin: 0 auto;
 
     p:nth-child(2) {
-      padding-top: 10px;
+      padding: 0;
+      margin-top: 10px;
     }
 
     p:nth-child(3) {
-      padding-top: 22px;
+      padding: 0;
+      margin-top: 22px;
     }
   }
 
@@ -92,5 +94,35 @@
     padding-top: 45px;
     padding-left: 50px;
     padding-right: 51px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .superiorities-item {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .superiorities-item--place .superiorities__title {
+    margin-left: 48px;
+    margin-right: 50px;
+  }
+
+  .superiorities-item--road {
+    .superiorities__title {
+      margin-left: 59px;
+      margin-right: 60px;
+    }
+
+    p:nth-child(3) {
+      margin-top: 20px;
+      margin-right: 5px;
+      margin-left: 5px;
+    }
+  }
+
+  .superiorities-item--tourist .superiorities__title {
+    margin-left: 74px;
+    margin-right: 74px;
   }
 }

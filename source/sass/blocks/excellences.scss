@@ -1,7 +1,6 @@
 .excellences__title {
   margin: 0;
   padding: 0;
-  padding-top: 77px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -38,13 +37,14 @@
 .excellences-box--city {
   position: relative;
   margin-top: 5px;
+  padding-top: 77px;
   min-height: 230px;
 }
 
 .excellences-box--city::before {
   position: absolute;
   content: "";
-  top: 0;
+  top: -1px;
   left: 0;
   width: 320px;
   height: 37px;
@@ -54,10 +54,7 @@
 .excellences-box--bridge {
   margin-top: 37px;
   min-height: 191px;
-
-  .excellences__title {
-    padding-top: 38px;
-  }
+  padding-top: 38px;
 }
 
 .excellences__list {
@@ -100,7 +97,6 @@
   }
 
   .excellences__title {
-    padding-top: 45px;
     font-size: 21px;
   }
 
@@ -114,36 +110,50 @@
 
   .excellences-box--city {
     width: 361px;
+    padding-top: 44px;
     padding-left: 23px;
     padding-right: 23px;
   }
 
   .excellences-box--bridge {
-    width: 360px;
-    padding-left: 23px;
-    padding-right: 28px;
+    width: 368px;
+    padding-top: 43px;
+    padding-left: 12px;
+    padding-right: 16px;
 
     .excellences__title {
-      padding-top: 45px;
-      padding-left: 31px;
-      padding-right: 25px;
+      margin-left: 40px;
+      margin-right: 37px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .excellences-box {
-    width: 563px;
+  .excellences__title {
+    padding: 0;
+  }
+
+  .excellences__text:nth-child(3) {
+    padding: 0;
+    margin-top: 23px;
   }
 
   .excellences-box--city {
-    padding-top: 6px;
-    padding-left: 36px;
-    padding-right: 42px;
+    width: 534px;
+    padding-top: 51px;
+    padding-left: 70px;
+    padding-right: 67px;
+
+    .excellences__title {
+      margin-right: 40px;
+      margin-left: 37px;
+    }
   }
 
-  .excellences__title {
-    margin-right: 54px;
-    margin-left: 58px;
+  .excellences-box--bridge {
+    width: 514px;
+    padding-left: 86px;
+    padding-right: 87px;
+    padding-top: 52px;
   }
 }

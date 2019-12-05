@@ -4,8 +4,8 @@
 
 .advantages__title {
   margin: 0;
-  padding-left: 27px;
-  padding-right: 31px;
+  margin-left: 27px;
+  margin-right: 31px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -15,8 +15,8 @@
 .advantages__text {
   margin: 0;
   margin-top: 27px;
-  padding-left: 17px;
-  padding-right: 20px;
+  margin-left: 17px;
+  margin-right: 20px;
   font-size: 14px;
   line-height: 26px;
   text-align: center;
@@ -31,7 +31,7 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
-    padding-top: 10px;
+    padding-top: 12px;
   }
 
   .advantages__item {
@@ -43,8 +43,8 @@
   }
 
   .advantages__title {
-    padding-left: 87px;
-    padding-right: 95px;
+    margin-left: 94px;
+    margin-right: 95px;
     font-size: 21px;
     line-height: 26px;
   }
@@ -56,8 +56,7 @@
   }
 
   .advantages__title {
-    padding-left: 296px;
-    padding-right: 298px;
+    margin-left: 95px;
   }
 
   .advantages__text {
