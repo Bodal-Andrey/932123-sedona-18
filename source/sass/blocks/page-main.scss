@@ -41,6 +41,15 @@
     background-image: url("../img/bg-back-tablet@1x.jpg");
   }
 
+  .page-main__image--inner {
+    padding-top: 0;
+    height: 290px;
+  }
+
+  .page-main__image--inner img {
+    margin-top: -40px;
+  }
+
   .page-main__image::after {
     bottom: -1px;
     right: 0;
@@ -69,5 +78,13 @@
     width: 1200px;
     height: 57px;
     background-image: url("../img/bg-intro-triangle-desktop.svg");
+  }
+
+  .page-main__image--inner {
+    height: 300px;
+  }
+
+  .page-main__image--inner img {
+    margin-top: -112px;
   }
 }
