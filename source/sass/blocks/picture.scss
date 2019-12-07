@@ -76,7 +76,13 @@
 }
 
 @media (min-width: $desktop-width) {
+  .picture {
+    position: relative;
+  }
+
   .picture__box {
+    position: absolute;
+    width: 100%;
     margin-top: -81px;
     color: #ffffff;
     background-color: rgba(0, 0, 0, 0.3);

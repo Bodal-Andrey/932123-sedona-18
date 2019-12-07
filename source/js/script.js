@@ -1,7 +1,7 @@
 var navMain = document.querySelector(".main-nav");
 var navButton = document.querySelector(".main-nav__button");
 
-navMain.classList.remove(main-nav--nojs);
+navMain.classList.remove("main-nav--nojs");
 
 navButton.addEventListener("click", function() {
     if (navMain.classList.contains("main-nav--closed")) {
