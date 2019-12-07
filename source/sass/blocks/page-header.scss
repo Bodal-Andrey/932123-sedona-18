@@ -3,12 +3,14 @@
 }
 
 .page-header__logo {
+  position: absolute;
+  bottom: -82px;
+  left: 110px;
   display: block;
   width: 102px;
   height: 83px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -24px;
+  margin: 0 auto;
+  z-index: 2;
 }
 
 @media (min-width: $tablet-width) {

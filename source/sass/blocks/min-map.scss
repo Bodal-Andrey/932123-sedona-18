@@ -14,12 +14,20 @@
 }
 
 @media (min-width: $tablet-width) {
+  .min-map {
+    margin-top: 58px;
+  }
+
   .min-map__image {
     width: 768px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .min-map {
+    margin-top: 66px;
+  }
+
   .min-map__image {
     width: 1200px;
   }

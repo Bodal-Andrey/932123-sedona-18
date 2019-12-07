@@ -24,10 +24,34 @@
 }
 
 .review-checkbox__label {
+  position: relative;
+  padding-left: 50px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   text-transform: none;
+}
+
+.review-checkbox__input {
+  position: absolute;
+  appearance: none;
+}
+
+.review-checkbox__icon {
+  position: absolute;
+  top: -9px;
+  left: 1px;
+  width: 46px;
+  height: 46px;
+  background-color: #f2f2f2;
+  border: 5px solid #f2f2f2;
+  border-radius: 5px;
+}
+
+.review-checkbox__input:checked + .review-checkbox__label > .review-checkbox__icon {
+  background-image: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @media (min-width: $tablet-width) {
