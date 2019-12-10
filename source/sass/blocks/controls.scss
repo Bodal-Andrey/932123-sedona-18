@@ -27,8 +27,6 @@
 @media (min-width: $tablet-width) {
   .controls {
     position: absolute;
-    left: 59px;
-    bottom: 7px;
     width: 650px;
     height: 93px;
     padding-left: 36px;
@@ -55,7 +53,6 @@
 
 @media (min-width: $desktop-width) {
   .controls {
-    left: 200px;
     width: 800px;
   }
 

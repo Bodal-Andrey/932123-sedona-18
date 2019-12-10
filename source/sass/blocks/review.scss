@@ -1,4 +1,10 @@
+.review {
+  margin-top: 38px;
+  margin-bottom: 73px;
+}
+
 .review__title {
+  margin: 0;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -6,10 +12,20 @@
 }
 
 .review__text {
+  margin: 0;
+  margin-top: 26px;
+  margin-left: 10px;
+  margin-right: 10px;
   font-size: 14px;
   line-height: 24px;
   text-align: center;
   color: #333333;
+}
+
+.review__form {
+  margin-top: 36px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .review-form__fieldset {

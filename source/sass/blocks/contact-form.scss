@@ -1,11 +1,10 @@
 .contact-form {
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-top: 25px;
 }
 
 .contact-form__legend {
-  margin-bottom: 20px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -14,6 +13,7 @@
 
 .contact-form__list {
   margin: 0;
+  margin-top: 20px;
   padding: 0;
   list-style: none;
 }
@@ -21,13 +21,13 @@
 .contact-form__item {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 20px;
+  margin-bottom: 12px;
 }
 
 .contact-form__label {
   align-items: center;
-  padding-left: 20px;
-  padding-bottom: 15px;
+  margin-left: 20px;
+  margin-bottom: 7px;
   font-size: 14px;
   line-height: 26px;
   color: #333333;
