@@ -78,7 +78,7 @@
                 <li class="name-form__item">
                   <label class="name-form__label" for="name">Имя*:</label>
                   <input
-                    class="name-form__input"
+                    class="name-form__input name-form__input--name"
                     id="name"
                     type="text"
                     name="name"
@@ -90,7 +90,7 @@
                     >Фамилия*:</label
                   >
                   <input
-                    class="name-form__input"
+                    class="name-form__input name-form__input--surname"
                     id="surname"
                     type="text"
                     name="surname"
@@ -102,7 +102,7 @@
                     >Отчество:</label
                   >
                   <input
-                    class="name-form__input"
+                    class="name-form__input name-form__input--patronymic"
                     id="patronymic"
                     type="text"
                     name="patronymic"
@@ -116,29 +116,29 @@
                 Контактная информация:
               </legend>
               <ul class="contact-form__list">
-                <li class="contact-form__item">
+                <li class="contact-form__item contact-form__item--phone">
                   <label class="contact-form__label" for="phone"
                     >Контактный телефон*:</label
                   >
                   <input
-                    class="contact-form__input contact-form__input--fast"
+                    class="contact-form__input"
                     id="phone"
                     type="text"
                     name="phone"
                     placeholder="Введите телефон"
-                  />
+                  /><span class="contact-form__icon"></span>
                 </li>
-                <li class="contact-form__item">
+                <li class="contact-form__item contact-form__item--email">
                   <label class="contact-form__label" for="email"
                     >Электронная почта*:</label
                   >
                   <input
-                    class="contact-form__input contact-form__input--fast"
+                    class="contact-form__input"
                     id="email"
                     type="text"
                     name="email"
                     placeholder="Введите e-mail"
-                  />
+                  /><span class="contact-form__icon"></span>
                 </li>
               </ul>
             </fieldset>
@@ -155,7 +155,8 @@
                     name="impress"
                   />
                   <label class="review-radio__label" for="positive"
-                    >Скорее положительное</label
+                    ><span class="review-radio__icon"></span>Скорее
+                    положительное</label
                   >
                 </li>
                 <li class="review-radio__item">
@@ -166,7 +167,8 @@
                     name="impress"
                   />
                   <label class="review-radio__label" for="negative"
-                    >Скорее отрицательное</label
+                    ><span class="review-radio__icon"></span>Скорее
+                    отрицательное</label
                   >
                 </li>
                 <li class="review-radio__item">
@@ -177,7 +179,8 @@
                     name="impress"
                   />
                   <label class="review-radio__label" for="difficult"
-                    >Затрудняюсь ответить</label
+                    ><span class="review-radio__icon"></span>Затрудняюсь
+                    ответить</label
                   >
                 </li>
               </ul>
@@ -240,14 +243,14 @@
                 Опишите свои эмоции:
               </legend>
               <label class="review-emotions__label" for="emotions"></label>
-                <textarea
-                  class="review-emotions__textarea"
-                  id="emotions"
-                  name="emotions"
-                  rows="8"
-                  cols="40"
-                  placeholder="Опишите подробно все свои восторги"
-                ></textarea>
+              <textarea
+                class="review-emotions__textarea"
+                id="emotions"
+                name="emotions"
+                rows="8"
+                cols="40"
+                placeholder="Опишите подробно все свои восторги"
+              ></textarea>
               <div class="review-emotions__box">
                 <button class="review-emotions__button" type="submit">
                   Отправить отзыв

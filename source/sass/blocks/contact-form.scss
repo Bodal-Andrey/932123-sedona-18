@@ -19,6 +19,7 @@
 }
 
 .contact-form__item {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 12px;
@@ -50,11 +51,35 @@
   }
 }
 
+.contact-form__icon {
+  position: absolute;
+  content: "";
+  top: 33px;
+  right: 0;
+  width: 58px;
+  height: 58px;
+  background-color: #e6e6e6;
+}
+
+.contact-form__item--phone .contact-form__icon {
+  background-image: url(../img/icon-phone.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contact-form__item--email .contact-form__icon {
+  background-image: url(../img/icon-mail.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
 @media (min-width: $tablet-width) {
   .contact-form {
     order: 1;
     width: 648px;
     margin: 0 auto;
+    margin-top: 34px;
   }
 
   .contact-form__legend {
@@ -63,6 +88,14 @@
 
   .contact-form__input {
     width: 648px;
+  }
+
+  .contact-form__list {
+    margin-top: 24px;
+  }
+
+  .contact-form__item {
+    margin-bottom: 23px;
   }
 }
 
