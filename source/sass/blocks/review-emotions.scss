@@ -66,6 +66,7 @@
 
 @media (min-width: $tablet-width) {
   .review-emotions {
+    margin-top: 22px;
     order: 1;
   }
 
@@ -79,19 +80,25 @@
 
   .review-emotions__textarea {
     width: 648px;
+    margin-top: 53px;
   }
 
   .review-emotions__box {
     display: flex;
+    margin-top: 58px;
   }
 
   .review-emotions__button {
+    width: 324px;
+    padding-right: 12px;
     margin: 0;
   }
 
   .review-emotions__annotation {
     display: block;
-    padding-left: 210px;
+    margin: 0;
+    margin-top: 18px;
+    margin-left: 165px;
   }
 }
 
@@ -105,6 +112,16 @@
   }
 
   .review-emotions__annotation {
-    padding-left: 520px;
+    margin-top: 18px;
+    margin-left: 321px;
+  }
+
+  .review-emotions__box {
+    margin-top: 56px;
+  }
+
+  .review-emotions__button {
+    width: 480px;
+    padding-right: 0;
   }
 }

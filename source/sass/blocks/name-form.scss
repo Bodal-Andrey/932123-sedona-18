@@ -89,10 +89,27 @@
 
 @media (min-width: $desktop-width) {
   .name-form {
+    width: 480px;
     padding-left: 80px;
   }
 
   .name-form__legend {
     text-align: left;
+  }
+
+  .name-form__item {
+    width: 400px;
+  }
+
+  .name-form__input--name {
+    width: 349px;
+  }
+
+  .name-form__input--surname {
+    width: 312px;
+  }
+
+  .name-form__input--patronymic {
+    width: 317px;
   }
 }

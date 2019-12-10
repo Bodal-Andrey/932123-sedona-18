@@ -101,21 +101,48 @@
 
 @media (min-width: $desktop-width) {
   .contact-form {
-    width: 980px;
+    width: 1001px;
+  }
+
+  .contact-form__word {
+    display: none;
   }
 
   .contact-form__list {
     display: flex;
+    margin-top: 72px;
   }
 
   .contact-form__item {
     flex-wrap: nowrap;
+    align-items: center;
     width: 400px;
-    margin-left: 50px;
   }
 
   .contact-form__label {
     flex-shrink: 0;
     padding: 0;
+    margin-bottom: 0;
+  }
+
+  .contact-form__input {
+    margin-left: 16px;
+  }
+
+  .contact-form__icon {
+    top: 0;
+    right: -21px;
+  }
+
+  .contact-form__item--email {
+    margin-left: 80px;
+
+    .contact-form__input {
+      padding-right: 124px;
+    }
+
+    .contact-form__icon {
+      right: -100px;
+    }
   }
 }

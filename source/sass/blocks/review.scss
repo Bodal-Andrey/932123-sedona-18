@@ -37,6 +37,7 @@
 @media (min-width: $tablet-width) {
   .review {
     margin-top: 74px;
+    margin-bottom: 96px;
   }
 
   .review__form {
@@ -58,9 +59,18 @@
 }
 
 @media (min-width: $desktop-width) {
+  .review {
+    margin-top: 112px;
+    margin-bottom: 101px;
+  }
+
   .review__text {
     width: 440px;
     margin: 0 auto;
-    margin-bottom: 70px;
+    margin-top: 30px;
+  }
+
+  .review__form {
+    margin-top: 59px;
   }
 }

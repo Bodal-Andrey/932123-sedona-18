@@ -86,11 +86,13 @@
 
 @media (min-width: $desktop-width) {
   .review-radio {
-    padding-left: 147px;
+    display: block;
+    padding-left: 65px;
   }
 
   .review-radio__legend {
-    padding-left: 120px;
+    margin-left: 134px;
+    text-align: inherit;
   }
 
   .review-radio__item {
