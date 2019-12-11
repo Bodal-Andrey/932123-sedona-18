@@ -29,9 +29,20 @@
 }
 
 .review-form__fieldset {
+  position: relative;
   margin: 0;
   padding: 0;
   border: none;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -19px;
+    left: -20px;
+    width: 320px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -45,6 +56,10 @@
     flex-wrap: wrap;
     padding: 0;
     margin-top: 74px;
+  }
+
+  .review-form__fieldset::before {
+    display: none;
   }
 
   .review__title {

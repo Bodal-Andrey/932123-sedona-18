@@ -25,7 +25,7 @@
 
 .name-form__label {
   margin: 0;
-  margin-right: 10px;
+  margin-right: 14px;
   font-size: 14px;
   line-height: 26px;
   color: #333333;
@@ -34,7 +34,7 @@
 .name-form__input {
   flex-grow: 1;
   padding-top: 20px;
-  padding-left: 26px;
+  padding-left: 22px;
   padding-bottom: 20px;
   background-color: #f2f2f2;
   border: none;
@@ -55,9 +55,20 @@
   }
 
   .name-form__legend {
+    position: relative;
     font-size: 21px;
     text-align: start;
     margin-bottom: 58px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 4px;
+      left: -58px;
+      width: 1px;
+      height: 292px;
+      background-color:rgba(0, 0, 0, 0.1);
+    }
   }
 
   .name-form__item {
@@ -95,6 +106,11 @@
 
   .name-form__legend {
     text-align: left;
+
+    &::before {
+      top: 7px;
+      left: -78px;
+    }
   }
 
   .name-form__item {

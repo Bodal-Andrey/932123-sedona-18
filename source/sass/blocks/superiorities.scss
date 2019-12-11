@@ -1,5 +1,26 @@
 .superiorities {
+  position: relative;
   background-color: #eaeaea;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 164px;
+    left: 20px;
+    width: 280px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: 167px;
+    left: 20px;
+    width: 280px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
 }
 
 .superiorities__title {
@@ -57,6 +78,11 @@
   .superiorities {
     display: flex;
     min-height: 256px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
   }
 
   .superiorities__title {
