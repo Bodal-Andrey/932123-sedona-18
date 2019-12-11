@@ -1,11 +1,10 @@
 .name-form {
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 30px;
 }
 
 .name-form__legend {
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -21,12 +20,12 @@
 .name-form__item {
   display: flex;
   align-items: center;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .name-form__label {
   margin: 0;
-  padding-right: 10px;
+  margin-right: 14px;
   font-size: 14px;
   line-height: 26px;
   color: #333333;
@@ -35,7 +34,7 @@
 .name-form__input {
   flex-grow: 1;
   padding-top: 20px;
-  padding-left: 20px;
+  padding-left: 22px;
   padding-bottom: 20px;
   background-color: #f2f2f2;
   border: none;
@@ -51,26 +50,82 @@
 @media (min-width: $tablet-width) {
   .name-form {
     order: 1;
-    width: 50%;
     margin: 0;
-    padding-left: 10px;
+    padding-left: 57px;
   }
 
   .name-form__legend {
+    position: relative;
     font-size: 21px;
+    text-align: start;
+    margin-bottom: 58px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 4px;
+      left: -58px;
+      width: 1px;
+      height: 292px;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
   }
 
   .name-form__item {
     width: 315px;
   }
+
+  .name-form__label {
+    margin-right: 14px;
+  }
+
+  .name-form__input {
+    flex-grow: 0;
+    padding-left: 22px;
+  }
+
+  .name-form__input--name {
+    padding-right: 19px;
+  }
+
+  .name-form__input--surname {
+    width: 179px;
+  }
+
+  .name-form__input--patronymic {
+    width: 184px;
+    padding-left: 25px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .name-form {
+    width: 480px;
     padding-left: 80px;
   }
 
   .name-form__legend {
     text-align: left;
+
+    &::before {
+      top: 7px;
+      left: -78px;
+    }
+  }
+
+  .name-form__item {
+    width: 400px;
+  }
+
+  .name-form__input--name {
+    width: 349px;
+  }
+
+  .name-form__input--surname {
+    width: 312px;
+  }
+
+  .name-form__input--patronymic {
+    width: 317px;
   }
 }

@@ -1,7 +1,18 @@
 .min-map {
+  position: relative;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 159px;
+    left: 146px;
+    width: 27px;
+    height: 27px;
+    background-image: url("../img/icon-map-marker.svg");
+  }
 }
 
 .min-map__link {
@@ -16,6 +27,11 @@
 @media (min-width: $tablet-width) {
   .min-map {
     margin-top: 58px;
+
+    &::before {
+      top: 163px;
+      left: 369px;
+    }
   }
 
   .min-map__image {
@@ -26,6 +42,11 @@
 @media (min-width: $desktop-width) {
   .min-map {
     margin-top: 66px;
+
+    &::before {
+      top: 162px;
+      left: 586px;
+    }
   }
 
   .min-map__image {

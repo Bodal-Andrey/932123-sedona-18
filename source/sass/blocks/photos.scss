@@ -30,7 +30,28 @@
 }
 
 .photos__item {
+  position: relative;
   width: 280px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -22px;
+    left: -16px;
+    width: 320px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  &:last-child::after {
+    position: absolute;
+    content: "";
+    bottom: -18px;
+    left: -16px;
+    width: 320px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
 }
 
 .photos__item:not(:first-child) {
@@ -61,6 +82,11 @@
 
   .photos__item {
     width: 324px;
+
+    &::before,
+    &:last-child::after {
+      display: none;
+    }
   }
 
   .photos__item:first-child {
