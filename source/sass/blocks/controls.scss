@@ -18,10 +18,22 @@
 
 .controls__replay {
   margin-right: 133px;
+
+  svg {
+    fill: #5c6870;
+  }
 }
 
 .controls__subtitles {
   margin-right: 31px;
+
+  svg {
+    fill: #5c5c5c;
+  }
+}
+
+.controls__fullscreen svg {
+  fill: #5c6870;
 }
 
 @media (min-width: $tablet-width) {
@@ -42,11 +54,11 @@
     }
   }
 
-  .controls__subtitles path {
+  .controls__subtitles svg {
     fill: #ffffff;
   }
 
-  .controls__fullscreen polygon {
+  .controls__fullscreen svg {
     fill: #ffffff;
   }
 }
