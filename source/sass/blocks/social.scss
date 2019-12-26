@@ -11,6 +11,23 @@
   list-style: none;
 }
 
+.social__link {
+  background-color: #81b3d2;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+
+    svg {
+      fill: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
 .social__link svg {
   fill: #ffffff;
 }
@@ -20,7 +37,6 @@
   padding-bottom: 13px;
   padding-left: 15px;
   padding-right: 13px;
-  background-color: #81b3d2;
 }
 
 .social__link--facebook {
@@ -28,7 +44,6 @@
   padding-bottom: 11px;
   padding-left: 21px;
   padding-right: 19px;
-  background-color: #81b3d2;
 }
 
 .social__link--youtube {
@@ -36,7 +51,6 @@
   padding-bottom: 13px;
   padding-left: 14px;
   padding-right: 13px;
-  background-color: #81b3d2;
 }
 
 .social__item {

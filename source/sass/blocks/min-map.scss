@@ -12,11 +12,13 @@
     width: 27px;
     height: 27px;
     background-image: url("../img/icon-map-marker.svg");
+    z-index: 2;
   }
-}
 
-.min-map__link {
-  display: block;
+  iframe {
+    position: absolute;
+    border: none;
+  }
 }
 
 .min-map__image {
@@ -32,6 +34,10 @@
       top: 163px;
       left: 369px;
     }
+
+    iframe {
+      width: 768px;
+    }
   }
 
   .min-map__image {
@@ -46,6 +52,10 @@
     &::before {
       top: 162px;
       left: 586px;
+    }
+
+    iframe {
+      width: 1200px;
     }
   }
 

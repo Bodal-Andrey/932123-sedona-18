@@ -4,8 +4,18 @@
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
-    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+    <link
+      rel="preload"
+      href="fonts/ptsans.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/ptsansbold.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
     <link href="css/style.min.css" rel="stylesheet" />
     <script src="picturefill.js" async=""></script>
   </head>
@@ -16,11 +26,11 @@
     <div class="container">
       <header class="page-header">
         <div class="page-header__wrapper">
-          <nav class="main-nav main-nav--closed">
+          <nav class="main-nav main-nav--opened main-nav--nojs">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
                 <a
-                  class="site-list__link site-list__link--primary"
+                  class="site-list__link site-list__link--primary site-list__link--active"
                   href="index.html"
                   >Главная</a
                 >
@@ -42,7 +52,7 @@
               <li class="site-list__item">
                 <a
                   class="site-list__link site-list__link--academy"
-                  href="https://htmlacademy.ru"
+                  href="https://htmlacademy.ru/intensive/adaptive"
                   >HTML Academy</a
                 >
               </li>
@@ -265,55 +275,58 @@
           <a class="select-hotel__link" href="#">Найти гостиницу</a>
         </section>
         <div class="page-main__map min-map">
-          <a class="min-map__link" href="#">
-            <picture>
-              <source
-                media="(min-width: 1200px)"
-                srcset="
-                  img/bg-map-desktop@1x.webp 1x,
-                  img/bg-map-desktop@2x.webp 2x
-                "
-                type="image/webp"
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="
-                  img/bg-map-tablet@1x.webp 1x,
-                  img/bg-map-tablet@2x.webp 2x
-                "
-                type="image/webp"
-              />
-              <source
-                srcset="
-                  img/bg-map-mobile@1x.webp 1x,
-                  img/bg-map-mobile@2x.webp 2x
-                "
-                type="image/webp"
-              />
-              <source
-                media="(min-width: 1200px)"
-                srcset="
-                  img/bg-map-desktop@1x.jpg 1x,
-                  img/bg-map-desktop@2x.jpg 2x
-                "
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="
-                  img/bg-map-tablet@1x.jpg 1x,
-                  img/bg-map-tablet@2x.jpg 2x
-                "
-              />
-              <img
-                class="min-map__image"
-                src="img/bg-map-mobile@1x.jpg"
-                srcset="img/bg-map-mobile@2x.jpg 2x"
-                alt="Карта Седоны"
-                width="320"
-                height="350"
-              />
-            </picture>
-          </a>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530922.9316979335!2d-113.04972280908336!3d34.21802044285297!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1577358032802!5m2!1sru!2sru"
+            width="320"
+            height="350"
+            frameborder="0"
+            style="border:0;"
+            allowfullscreen=""
+          ></iframe>
+          <picture>
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                img/bg-map-desktop@1x.webp 1x,
+                img/bg-map-desktop@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                img/bg-map-tablet@1x.webp 1x,
+                img/bg-map-tablet@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              srcset="
+                img/bg-map-mobile@1x.webp 1x,
+                img/bg-map-mobile@2x.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                img/bg-map-desktop@1x.jpg 1x,
+                img/bg-map-desktop@2x.jpg 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x"
+            />
+            <img
+              class="min-map__image"
+              src="img/bg-map-mobile@1x.jpg"
+              srcset="img/bg-map-mobile@2x.jpg 2x"
+              alt="Карта Седоны"
+              width="320"
+              height="350"
+            />
+          </picture>
         </div>
       </main>
       <footer class="page-footer">
@@ -349,11 +362,13 @@
               </li>
             </ul>
           </div>
-          <div class="page-footer__copyright">
+          <div class="page-footer__copyright copyright">
             <b>Разработано</b>
-            <a class="button" href="https://htmlacademy.ru/intensive/adaptive"
+            <a
+              class="copyright__button"
+              href="https://htmlacademy.ru/intensive/adaptive"
               ><span class="visually-hidden">HTML Academy</span>
-              <svg width="40" height="55">
+              <svg width="30" height="35">
                 <use xlink:href="#icon-htmlacademy"></use>
               </svg>
             </a>

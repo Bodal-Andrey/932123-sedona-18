@@ -38,6 +38,7 @@
   padding-bottom: 20px;
   background-color: #f2f2f2;
   border: none;
+  outline: none;
 
   &::placeholder {
     font-size: 18px;
@@ -82,6 +83,15 @@
   .name-form__input {
     flex-grow: 0;
     padding-left: 22px;
+
+    &:hover {
+      background-color: #e5e5e5;
+    }
+
+    &:focus {
+      background-color: #ffffff;
+      border: solid 4px #e5e5e5;
+    }
   }
 
   .name-form__input--name {

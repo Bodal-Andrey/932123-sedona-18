@@ -48,6 +48,16 @@
   background-color: #f2f2f2;
   border: 5px solid #f2f2f2;
   border-radius: 50%;
+
+  &:hover {
+    background-color: #e5e5e5;
+    border-color: #e5e5e5;
+  }
+
+  &:active {
+    background-color: #d5d5d5;
+    border-color: #d5d5d5;
+  }
 }
 
 .review-radio__input:checked + .review-radio__label > .review-radio__icon::before {
@@ -62,6 +72,9 @@
   background-position: center;
 }
 
+.review-radio__input:checked + .review-radio__label > .review-radio__icon:active::before {
+  background-color: rgba(0, 0, 0, 0.3);
+}
 
 @media (min-width: $tablet-width) {
   .review-radio {
