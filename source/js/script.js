@@ -14,3 +14,35 @@ navButton.addEventListener("click", function() {
         navMain.classList.remove("main-nav--opened");
     }
 });
+
+var reviewButton = document.querySelector(".review-emotions__button");
+var reviewSent = document.querySelector(".modal-sent");
+var sentButton = document.querySelector(".modal-sent__button");
+var phone = document.querySelector("[name = phone]");
+var email = document.querySelector("[name = email]");
+var errorButton = document.querySelector(".modal-error__button");
+var reviewError = document.querySelector(".modal-error");
+
+reviewButton.addEventListener( "submit", function (evt) {
+    if (!phone.value || !eMail.value) {
+        evt.preventDefault();
+        reviewError.classList.remove("modal-none");
+        reviewError.classList.add("modal-show");
+    } else {
+        evt.preventDefault();
+        reviewSent.classList.remove("modal-none");
+        reviewSent.classList.add("modal-show");
+    }  
+});
+
+errorButton.addEventListener( "click", function (evt) {
+    evt.preventDefault();
+    reviewError.classList.remove("modal-show");
+    reviewError.classList.add("modal-none");
+});
+
+sentButton.addEventListener( "click", function (evt) {
+    evt.preventDefault();
+    reviewSent.classList.remove("modal-show");
+    reviewSent.classList.add("modal-none");
+});

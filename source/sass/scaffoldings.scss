@@ -43,6 +43,14 @@ img {
   background-color: #ffffff;
 }
 
+.modal-show {
+  display: block;
+}
+
+.modal-none {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
   .container {
     width: 768px;

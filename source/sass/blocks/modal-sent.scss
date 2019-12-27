@@ -1,8 +1,7 @@
 .modal-sent {
   position: absolute;
-  top: 1600px;
+  top: 1650px;
   z-index: 2;
-  display: none;
   padding-top: 25px;
   width: 320px;
   min-height: 323px;
@@ -72,8 +71,8 @@
 
 @media (min-width: $tablet-width) {
   .modal-sent {
-    top: 1000px;
-    left: 127px;
+    top: 1500px;
+    left: 205px;
     width: 640px;
     min-height: 347px;
   }
@@ -97,7 +96,8 @@
 
 @media (min-width: $desktop-width) {
   .modal-sent {
-    left: 313px;
+    top: 1350px;
+    left: 353px;
   }
 
   .modal-sent__title {

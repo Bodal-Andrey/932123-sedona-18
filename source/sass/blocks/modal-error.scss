@@ -2,7 +2,6 @@
   position: absolute;
   top: 1300px;
   z-index: 2;
-  display: none;
   padding-top: 25px;
   padding-left: 50px;
   padding-right: 50px;
@@ -65,7 +64,7 @@
 @media (min-width: $tablet-width) {
   .modal-error {
     top: 1400px;
-    left: 218px;
+    left: 290px;
     width: 400px;
     min-height: 347px;
     padding-top: 50px;
@@ -91,6 +90,6 @@
 
 @media (min-width: $desktop-width) {
   .modal-error {
-    left: 425px;
+    left: 500px;
   }
 }
