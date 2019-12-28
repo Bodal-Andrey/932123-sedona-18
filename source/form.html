@@ -98,7 +98,7 @@
             action="https://echo.htmlacademy.ru"
             method="post"
           >
-            <fieldset class="review-form__fieldset name-form">
+            <fieldset class="review__fieldset name-form">
               <legend class="name-form__legend">Представьтесь:</legend>
               <ul class="name-form__list">
                 <li class="name-form__item">
@@ -109,6 +109,7 @@
                     type="text"
                     name="name"
                     placeholder="Петр"
+                    required
                   />
                 </li>
                 <li class="name-form__item">
@@ -121,6 +122,7 @@
                     type="text"
                     name="surname"
                     placeholder="Иванов"
+                    required
                   />
                 </li>
                 <li class="name-form__item">
@@ -137,7 +139,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="review-form__fieldset contact-form">
+            <fieldset class="review__fieldset contact-form">
               <legend class="contact-form__legend">
                 Контактная информация:
               </legend>
@@ -153,6 +155,7 @@
                     type="tel"
                     name="phone"
                     placeholder="Введите телефон"
+                    required
                   /><span class="contact-form__icon"></span>
                 </li>
                 <li class="contact-form__item contact-form__item--email">
@@ -165,11 +168,12 @@
                     type="email"
                     name="email"
                     placeholder="Введите e-mail"
+                    required
                   /><span class="contact-form__icon"></span>
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="review-form__fieldset  review-radio">
+            <fieldset class="review__fieldset  review-radio">
               <legend class="review-radio__legend">
                 Ваше общее впечатление:
               </legend>
@@ -180,6 +184,7 @@
                     id="positive"
                     type="radio"
                     name="impress"
+                    checked
                   />
                   <label class="review-radio__label" for="positive"
                     ><span class="review-radio__icon"></span>Скорее
@@ -212,7 +217,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="review-form__fieldset review-checkbox">
+            <fieldset class="review__fieldset review-checkbox">
               <legend class="review-checkbox__legend">
                 Посещенные достопримечательности:
               </legend>
@@ -267,7 +272,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="review-form__fieldset review-emotions">
+            <fieldset class="review__fieldset review-emotions">
               <legend class="review-emotions__legend">
                 Опишите свои эмоции:
               </legend>
@@ -301,11 +306,13 @@
           <div class="modal-sent modal-none">
             <h1 class="modal-sent__title">Ваш отзыв отправлен!</h1>
             <p class="modal-sent__text">
-              Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее
-              время мы опубликуем его на сайте.
+              Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br />
+              В ближайшее время мы опубликуем его на сайте.
             </p>
             <p class="modal-sent__wrapper">
-              <button class="modal-sent__button" type="button">Закрыть окно</button>
+              <button class="modal-sent__button" type="button">
+                Закрыть окно
+              </button>
             </p>
           </div>
         </section>
