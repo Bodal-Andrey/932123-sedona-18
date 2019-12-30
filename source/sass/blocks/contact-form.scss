@@ -74,7 +74,6 @@
   background-position: center;
 }
 
-
 @media (min-width: $tablet-width) {
   .contact-form {
     order: 1;
@@ -138,10 +137,12 @@
   .contact-form__item {
     flex-wrap: nowrap;
     align-items: center;
-    width: 400px;
+    width: 422px;
   }
 
   .contact-form__legend {
+    margin: 0 auto;
+
     &::before {
       left: -339px;
       width: 280px;
@@ -165,18 +166,15 @@
 
   .contact-form__icon {
     top: 0;
-    right: -21px;
   }
 
   .contact-form__item--email {
-    margin-left: 80px;
+    margin-left: 57px;
+    width: 502px;
 
     .contact-form__input {
-      padding-right: 124px;
-    }
-
-    .contact-form__icon {
-      right: -100px;
+      padding-right: 118px;
+      padding-left: 25px;
     }
   }
 }

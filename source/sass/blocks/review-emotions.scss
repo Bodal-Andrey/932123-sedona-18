@@ -143,6 +143,8 @@
   }
 
   .review-emotions__legend {
+    margin: 0 auto;
+
     &::before {
       left: -353px;
       width: 280px;
@@ -161,6 +163,7 @@
   .review-emotions__annotation {
     margin-top: 18px;
     margin-left: 321px;
+    width: 161px;
   }
 
   .review-emotions__box {
