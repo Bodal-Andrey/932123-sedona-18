@@ -21,9 +21,9 @@
 .review-emotions__textarea {
   display: block;
   width: 280px;
+  margin-top: 13px;
   padding: 0;
   padding-bottom: 20px;
-  margin-top: 13px;
   background-color: #f2f2f2;
   border: none;
 
@@ -89,8 +89,8 @@
     font-size: 21px;
 
     &::before {
-      position: absolute;
       content: "";
+      position: absolute;
       top: 12px;
       left: -200px;
       width: 126px;
@@ -99,8 +99,8 @@
     }
 
     &::after {
-      position: absolute;
       content: "";
+      position: absolute;
       top: 12px;
       right: -200px;
       width: 126px;
@@ -125,8 +125,8 @@
 
   .review-emotions__button {
     width: 324px;
-    padding-right: 12px;
     margin: 0;
+    padding-right: 12px;
   }
 
   .review-emotions__annotation {

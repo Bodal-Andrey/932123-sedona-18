@@ -61,8 +61,8 @@
 }
 
 .review-radio__input:checked + .review-radio__label > .review-radio__icon::before {
-  position: absolute;
   content: "";
+  position: absolute;
   top: 12px;
   left: 13px;
   width: 22px;

@@ -2,8 +2,8 @@
   position: relative;
   width: 318px;
   height: 390px;
-  padding-top: 88px;
   margin-top: 57px;
+  padding-top: 88px;
   text-align: center;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: center;
@@ -12,8 +12,8 @@
 }
 
 .page-main__image::after {
-  position: absolute;
   content: "";
+  position: absolute;
   bottom: 0;
   right: -1px;
   width: 320px;
@@ -22,8 +22,8 @@
 }
 
 .page-main__image--inner {
-  padding-top: 50px;
   height: 157px;
+  padding-top: 50px;
   background-position: bottom;
 }
 
@@ -43,8 +43,8 @@
   }
 
   .page-main__image--inner {
-    padding-top: 133px;
     height: 290px;
+    padding-top: 133px;
   }
 
   .page-main__image--inner img {

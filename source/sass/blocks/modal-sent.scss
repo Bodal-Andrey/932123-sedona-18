@@ -2,9 +2,9 @@
   position: absolute;
   top: 1650px;
   z-index: 2;
-  padding-top: 25px;
   width: 320px;
   min-height: 323px;
+  padding-top: 25px;
   background-color: #ffffff;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
@@ -31,9 +31,9 @@
 
 .modal-sent__wrapper {
   display: block;
-  padding-top: 21px;
   margin: 0;
   margin-top: 38px;
+  padding-top: 21px;
   min-height: 98px;
   background-color: #f2f2f2;
 }
@@ -42,8 +42,8 @@
   display: block;
   width: 280px;
   min-height: 58px;
-  padding: 0;
   margin: 0 auto;
+  padding: 0;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
@@ -83,9 +83,9 @@
   }
 
   .modal-sent__wrapper {
+    min-height: 146px;
     margin-top: 63px;
     padding-top: 45px;
-    min-height: 146px;
   }
 
   .modal-sent__button {

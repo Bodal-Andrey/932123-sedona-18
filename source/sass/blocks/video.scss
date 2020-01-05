@@ -24,7 +24,6 @@
 }
 
 .video__image {
-  // display: block;
   position: relative;
   width: 320px;
   height: 200px;
@@ -55,8 +54,8 @@
 }
 
 .video__progress::after {
-  position: absolute;
   content: "";
+  position: absolute;
   top: 18px;
   left: 57px;
   width: 10px;
@@ -66,8 +65,8 @@
 }
 
 .video__progress::before {
-  position: absolute;
   content: "";
+  position: absolute;
   top: 22px;
   left: 22px;
   width: 235px;

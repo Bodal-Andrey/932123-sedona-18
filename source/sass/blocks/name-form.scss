@@ -68,13 +68,13 @@
 
   .name-form__legend {
     position: relative;
+    margin-bottom: 58px;
     font-size: 21px;
     text-align: start;
-    margin-bottom: 58px;
 
     &::before {
-      position: absolute;
       content: "";
+      position: absolute;
       top: 4px;
       left: -58px;
       width: 1px;

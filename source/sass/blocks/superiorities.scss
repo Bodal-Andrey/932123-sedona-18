@@ -3,8 +3,8 @@
   background-color: #eaeaea;
 
   &::before {
-    position: absolute;
     content: "";
+    position: absolute;
     top: 164px;
     left: 20px;
     width: 280px;
@@ -13,8 +13,8 @@
   }
 
   &::after {
-    position: absolute;
     content: "";
+    position: absolute;
     bottom: 167px;
     left: 20px;
     width: 280px;
@@ -98,16 +98,15 @@
   .superiorities-item {
     width: 256px;
     min-height: 136px;
-    // margin: 0 auto;
 
     p:nth-child(2) {
-      padding: 0;
       margin-top: 10px;
+      padding: 0;
     }
 
     p:nth-child(3) {
-      padding: 0;
       margin-top: 22px;
+      padding: 0;
     }
   }
 
@@ -130,9 +129,9 @@
   }
 
   .superiorities-item {
+    width: 294px;
     padding-left: 0;
     padding-right: 0;
-    width: 294px;
   }
 
   .superiorities-item--place .superiorities__title {

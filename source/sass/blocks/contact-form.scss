@@ -53,8 +53,8 @@
 }
 
 .contact-form__icon {
-  position: absolute;
   content: "";
+  position: absolute;
   top: 33px;
   right: 0;
   width: 58px;
@@ -87,8 +87,8 @@
     font-size: 21px;
 
     &::before {
-      position: absolute;
       content: "";
+      position: absolute;
       top: 12px;
       left: -185px;
       width: 126px;
@@ -97,8 +97,8 @@
     }
 
     &::after {
-      position: absolute;
       content: "";
+      position: absolute;
       top: 12px;
       right: -185px;
       width: 126px;
@@ -156,8 +156,8 @@
 
   .contact-form__label {
     flex-shrink: 0;
-    padding: 0;
     margin-bottom: 0;
+    padding: 0;
   }
 
   .contact-form__input {
