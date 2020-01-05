@@ -24,7 +24,8 @@
 }
 
 .video__image {
-  display: block;
+  // display: block;
+  position: relative;
   width: 320px;
   height: 200px;
   margin: 0 auto;
@@ -105,8 +106,8 @@
   }
 
   .video__box {
-    bottom: 7px;
-    left: 59px;
+    bottom: -1px;
+    left: 0;
     display: flex;
     flex-direction: column;
   }
@@ -155,7 +156,7 @@
   }
 
   .video__box {
-    left: 202px;
+    left: 2px;
     width: 800px;
   }
 

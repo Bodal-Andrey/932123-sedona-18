@@ -1,9 +1,9 @@
 .page-footer {
+  padding-top: 1px;
   padding-bottom: 40px;
 }
 
 .page-footer__wrapper {
-  margin-top: 32px;
   text-align: center;
 }
 
@@ -49,6 +49,7 @@
 @media (min-width: $tablet-width) {
   .page-footer__wrapper {
     display: flex;
+    flex-wrap: wrap;
     align-items: flex-start;
     padding-top: 11px;
     padding-left: 60px;

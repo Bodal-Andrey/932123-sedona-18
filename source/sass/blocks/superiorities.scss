@@ -77,6 +77,7 @@
 @media (min-width: $tablet-width) {
   .superiorities {
     display: flex;
+    flex-wrap: wrap;
     min-height: 256px;
 
     &::before,
@@ -91,13 +92,13 @@
 
   .superiorities-item--place {
     padding-top: 43px;
-    padding-right: 39px;
+    padding-right: 41px;
   }
 
   .superiorities-item {
-    width: 285px;
+    width: 256px;
     min-height: 136px;
-    margin: 0 auto;
+    // margin: 0 auto;
 
     p:nth-child(2) {
       padding: 0;
@@ -124,9 +125,14 @@
 }
 
 @media (min-width: $desktop-width) {
+  .superiorities {
+    padding-left: 52px;
+  }
+
   .superiorities-item {
     padding-left: 0;
     padding-right: 0;
+    width: 294px;
   }
 
   .superiorities-item--place .superiorities__title {
@@ -135,6 +141,9 @@
   }
 
   .superiorities-item--road {
+    margin-left: 109px;
+    padding-right: 9px;
+
     .superiorities__title {
       margin-left: 59px;
       margin-right: 60px;
@@ -147,8 +156,12 @@
     }
   }
 
-  .superiorities-item--tourist .superiorities__title {
-    margin-left: 74px;
-    margin-right: 74px;
+  .superiorities-item--tourist {
+    margin-left: 103px;
+
+    .superiorities__title {
+      margin-left: 74px;
+      margin-right: 74px;
+    }
   }
 }
