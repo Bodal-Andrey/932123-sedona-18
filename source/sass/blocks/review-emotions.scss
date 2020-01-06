@@ -21,15 +21,15 @@
 .review-emotions__textarea {
   display: block;
   width: 280px;
-  margin-top: 13px;
+  margin-top: 15px;
   padding: 0;
-  padding-bottom: 20px;
+  padding-top: 16px;
+  padding-left: 20px;
   background-color: #f2f2f2;
   border: none;
+  outline: none;
 
   &::placeholder {
-    padding-top: 20px;
-    padding-left: 20px;
     font-size: 18px;
     line-height: 26px;
     font-weight: bold;
@@ -115,7 +115,7 @@
 
   .review-emotions__textarea {
     width: 648px;
-    margin-top: 53px;
+    margin-top: 57px;
   }
 
   .review-emotions__box {

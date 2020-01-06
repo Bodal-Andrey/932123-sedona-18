@@ -26,20 +26,6 @@
   padding-left: 95px;
 }
 
-.copyright__button {
-  margin-top: -4px;
-  margin-left: 14px;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-
-  &:hover svg {
-    fill: #81b3d2;
-  }
-
-  &:active svg {
-    fill: rgba(0, 0, 0, 0.3);
-  }
-}
-
 .page-footer__copyright b {
   font-size: 14px;
   line-height: 26px;
