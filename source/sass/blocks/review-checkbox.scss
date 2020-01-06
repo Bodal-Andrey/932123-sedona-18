@@ -60,9 +60,7 @@
   }
 }
 
-.review-checkbox__input:checked
-  + .review-checkbox__label
-  > .review-checkbox__icon {
+.review-checkbox__input:checked + .review-checkbox__label > .review-checkbox__icon {
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-position: center;
